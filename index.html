@@ -1,103 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>✨ Sabrina Carpenter ` </title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Sabrina Carpenter ✨</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Economica&display=swap" rel="stylesheet">
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
 
+      body {
+          font-family: 'Economica', sans-serif;
+          background-color: #D1ECC8;
+          color: #333;
+          text-align: center;
+          padding: 20px;
+      }
+
+      /* Header */
+      .header {
+          background-color: #93C47D;
+          padding: 30px;
+          text-align: center;
+      }
+
+      .header h1 {
+          font-family: 'Dancing Script', cursive;
+          font-size: 50px;
+          color: white;
+      }
+
+      /* Navbar Styling */
+      nav {
+          background-color: #4d7942;
+          padding: 15px 0;
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          flex-wrap: wrap;
+      }
+
+      nav a {
+          text-decoration: none;
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          background-color: #355e2e;
+          padding: 15px 30px;
+          border-radius: 10px;
+          transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+          background-color: #2b4e25;
+      }
+
+      /* Sections */
+      .section {
+          padding: 80px 20px;
+          text-align: center;
+          color: #fff;
+          border: 2px solid #93C47D;
+          margin: 40px auto;
+          border-radius: 12px;
+          background-color: #a8cf96;
+          max-width: 900px;
+      }
+
+      .section h2 {
+          font-size: 32px;
+          margin-bottom: 20px;
+          font-family: 'Dancing Script', cursive;
+          color: #4d7942;
+      }
+
+      /* Horizontal Photo Gallery */
+      .gallery {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin-top: 20px;
+          flex-wrap: nowrap; /* Keeps them in one row */
+          overflow-x: auto; /* Adds horizontal scrolling if needed */
+      }
+
+      .gallery img {
+          width: 30%;
+          max-width: 280px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Responsive for small screens */
+      @media (max-width: 900px) {
+          .gallery {
+              justify-content: center;
+              overflow-x: scroll; /* Allow horizontal scrolling on small screens */
+          }
+
+          .gallery img {
+              width: 250px;
+          }
+      }
+
+  </style>
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
+        <h1>✨ Sabrina Carpenter ✨</h1>
+    </header>
 
-  <!-- Header Section -->
-  <header class="header">
-    <div class="logo">
-      <h1>✨Sabrina Carpenter✨</h1>
-    </div>
-  </header>
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">✨ Home ✨</a>
+        <a href="#achievements">✨ Achievements ✨</a>
+        <a href="#biography">✨ Biography ✨</a>
+        <a href="#albums">✨ Albums ✨</a>
+        <a href="#tours">✨ Tours ✨</a>
+    </nav>
 
-  <!-- Navbar (with anchor links to sections) -->
-  <nav>
-    <a href="#achievements">✨Achievements✨</a>
-    <a href="#biography">✨Biography✨</a>
-    <a href="#albums">✨Albums✨</a>
-    <a href="#tours">✨Tours✨</a>
-  </nav>
- 
-  <!-- Photo Gallery -->
-  <section class="gallery" style="display: flex; justify-content: center; gap: 20px;">
-    <div class="image-container" style="flex-grow: 1;">
-      <img src="https://media.newyorker.com/photos/66cceeaa1fbd8b4778d47649/1:1/w_1200,h_1200,c_limit/Battan-Carpenter.jpg" alt="Sabrina Left" style="width: 100%; height: auto; object-fit: cover;">
-    </div>
-    <div class="image-container" style="flex-grow: 1;">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/sabrina-carpenter-makeup-routine-products-66741aa06a6f4.jpg?crop=0.6697674418604651xw:1xh;center,top&resize=1200:*" alt="Sabrina Center" style="width: 100%; height: auto; object-fit: cover;">
-    </div>
-    <div class="image-container" style="flex-grow: 1;">
-      <img src="https://www.universalmusic.ca/files/2024/04/ESPRESSO.jpg" alt="Sabrina Right" style="width: 100%; height: auto; object-fit: cover;">
-    </div>
-  </section>
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <h2>✨ Welcome to the Sabrina Carpenter Fan Page ✨</h2>
+        <p>Sabrina Carpenter is a singer, songwriter, and actress known for her incredible voice, catchy songs, and charismatic performances.</p>
+        <div class="gallery">
+            <img src="https://media.newyorker.com/photos/66cceeaa1fbd8b4778d47649/1:1/w_1200,h_1200,c_limit/Battan-Carpenter.jpg" alt="Sabrina Left">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/sabrina-carpenter-makeup-routine-products-66741aa06a6f4.jpg?crop=0.6697674418604651xw:1xh;center,top&resize=1200:*" alt="Sabrina Center">
+            <img src="https://www.universalmusic.ca/files/2024/04/ESPRESSO.jpg" alt="Sabrina Right">
+        </div>
+    </section>
 
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <h2>✨ Achievements of Sabrina Carpenter ✨</h2>
+        <p>Sabrina has released several successful albums and hit songs like "Nonsense" and "Feather." She has opened for Taylor Swift on the Eras Tour.</p>
+        <ul>
+            <li>🏆 Record of the Year: "Espresso"</li>
+            <li>🏆 Album of the Year: "Short n’ Sweet"</li>
+            <li>🏆 Song of the Year: "Please Please Please"</li>
+            <li>🏆 Best New Artist</li>
+            <li>🏆 2025 Grammy Winner: Best Pop Solo Performance</li>
+        </ul>
+    </section>
 
-<!--Subheadings of the Tabs-->
-<div class="achievements-container">
-  <h2 class="achievements-title">✨Achievements of Sabrina Carpenter✨</h2>
-  <div class="achievements-box">
-    <p>
-      Sabrina Carpenter has released several successful albums and hit songs like “Nonsense” and “Feather.” She has performed on big stages around the world and opened for Taylor Swift on the Eras Tour. Her music has reached millions of listeners, and she’s known for her strong vocals, creative lyrics, and stylish performances. Sabrina has also been featured in major magazines and continues to grow as one of today’s top pop artists.
-    </p>
-    <p><strong>Sabrina has won:</strong></p>
-    <ul>
-      <li>Record of the Year: For "Espresso"</li>
-      <li>Album of the Year: For "Short n’ Sweet"</li>
-      <li>Song of the Year: For "Please Please Please"</li>
-      <li>Best New Artist</li>
-      <li>2025 Winner Grammy: Best Pop Solo Performance</li>
-    </ul>
-  </div>
-</div>
+    <!-- Biography Section -->
+    <section id="biography" class="section">
+        <h2>✨ Biography of Sabrina Carpenter ✨</h2>
+        <p>abrina Carpenter is an American actress and singer, best known for her role as Maya Hart on the Disney Channel series Girl Meets World (2014-2017). She was born in Lehigh Valley, Pennsylvania, Sabrina had developed an early love for singing and acting. She began posting videos of her singing  on YouTube and then she  caught the attention of industry professionals. In addition to acting, Sabrina is a successful pop singer. She released her debut, Can’t Blame a Girl for Trying,  from the album “eyes wide open” in 2014 and she has released several albums. Her music is known for its catchy tunes and lyrics. Sabrina’s acting career includes roles in films like The Short History of the Long Road and appearances in TV shows like Girl meets world. She is now continuing to build her career in both music and acting. Sabrina is also active on social media and often speaks out about mental health, self-love, and equality. Sabrina Carpenter has won several awards for her work in acting and music.
+    </section>
 
-<style>
-  body {
-    background-color: #d3ebc6; /* Light green background to match the theme */
-    margin: 0;
-    padding: 0;
-  }
+    <!-- Albums Section -->
+    <section id="albums" class="section">
+        <h2>✨ Albums of Sabrina Carpenter ✨</h2>
+        <p>Sabrina has 9 albums, her most hit album was the Short n Sweet album.</p>
+        <div class="gallery">
+            <img src="https://www.universalmusic.ca/files/2024/04/ESPRESSO.jpg" alt="Short n Sweet Album">
+            <img src="data:image/jpeg;base64,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" alt="EVOLution Album">
+        </div>
+    </section>
 
-  .achievements-container {
-    text-align: center;
-    padding: 50px 0; /* Adds space around the section */
-  }
+    <!-- Tours Section -->
+    <section id="tours" class="section">
+        <h2>✨ Tours of Sabrina Carpenter ✨</h2>
+        <p>Sabrina has performed worldwide, opening for Taylor Swift and headlining her own tours.</p>
+        <li> 🌎The Evolution Tour (2016-2017)
+        <li> 🌎The De-Tour (2017) 
+          <li> 🌎Singular Tour (2019)
+            <li>🌎Emails I Can't Send Tour (2022-2023)
+            <li> 🌎Short n' Sweet Tour (2024-2025)
+    </section>
 
-  .achievements-title {
-    background-color: #93C47D; /* Green Background */
-    color: white;
-    padding: 15px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 28px;
-    border-radius: 10px;
-    width: 60%;
-    margin: auto;
-    display: inline-block;
-  }
-
-  .achievements-box {
-    background-color: #93C47D; /* White box for contrast */
-    border: 3px solid #93C47D; /* Green border */
-    padding: 25px;
-    border-radius: 10px;
-    width: 80%;
-    margin: 30px auto; /* Adds space between header and paragraph */
-    text-align: left;
-    font-size: 18px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
-  }
-
-  ul {
-    padding-left: 20px;
-  }
-
-  ul li {
-    margin: 5px 0;
-  }
-</style>
+</body>
+</html>

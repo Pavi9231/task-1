@@ -134,5 +134,108 @@
       font-size: 18px;
       border-radius: 8px;
     }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Economica', sans-serif;
+            background-color: #D1ECC8;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            background-color: #93C47D;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 50px;
+            color: white;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #4d7942;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #355e2e;
+            padding: 15px 30px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2b4e25;
+        }
+
+        /* Sections */
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+            color: #fff;
+            border: 2px solid #93C47D;
+            margin: 40px auto;
+            border-radius: 12px;
+            background-color: #a8cf96;
+            max-width: 900px;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive;
+            color: #4d7942;
+        }
+
+        /* Horizontal Photo Gallery */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: nowrap; /* Keeps them in one row */
+            overflow-x: auto; /* Adds horizontal scrolling if needed */
+        }
+
+        .gallery img {
+            width: 30%;
+            max-width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive for small screens */
+        @media (max-width: 900px) {
+            .gallery {
+                justify-content: center;
+                overflow-x: scroll; /* Allow horizontal scrolling on small screens */
+            }
+
+            .gallery img {
+                width: 250px;
+            }
+        }
+
+    </style>
+</head>
+<body>
   

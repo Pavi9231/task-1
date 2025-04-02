@@ -26,23 +26,78 @@
   </nav>
  
   <!-- Photo Gallery -->
-  <section class="gallery">
-    <div class="image-container">
-      <img src="https://media.newyorker.com/photos/66cceeaa1fbd8b4778d47649/1:1/w_1200,h_1200,c_limit/Battan-Carpenter.jpg" alt="Sabrina Left">
+  <section class="gallery" style="display: flex; justify-content: center; gap: 20px;">
+    <div class="image-container" style="flex-grow: 1;">
+      <img src="https://media.newyorker.com/photos/66cceeaa1fbd8b4778d47649/1:1/w_1200,h_1200,c_limit/Battan-Carpenter.jpg" alt="Sabrina Left" style="width: 100%; height: auto; object-fit: cover;">
     </div>
-    <div class="image-container">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/sabrina-carpenter-makeup-routine-products-66741aa06a6f4.jpg?crop=0.6697674418604651xw:1xh;center,top&resize=1200:*" alt="Sabrina Center">
+    <div class="image-container" style="flex-grow: 1;">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/sabrina-carpenter-makeup-routine-products-66741aa06a6f4.jpg?crop=0.6697674418604651xw:1xh;center,top&resize=1200:*" alt="Sabrina Center" style="width: 100%; height: auto; object-fit: cover;">
     </div>
-    <div class="image-container">
-      <img src="https://www.universalmusic.ca/files/2024/04/ESPRESSO.jpg" alt="Sabrina Right">
+    <div class="image-container" style="flex-grow: 1;">
+      <img src="https://www.universalmusic.ca/files/2024/04/ESPRESSO.jpg" alt="Sabrina Right" style="width: 100%; height: auto; object-fit: cover;">
     </div>
-<section> 
+  </section>
+
 
 <!--Subheadings of the Tabs-->
-</section>
-<div>
-  <h2>✨Achievements✨</h2>
-  }
-  <p> Sabrina Carpenter has released several successful albums and hit songs like “Nonsense” and “Feather.” She has performed on big stages around the world and opened for Taylor Swift on the Eras Tour. Her music has reached millions of listeners, and she’s known for her strong vocals, creative lyrics, and stylish performances. Sabrina has also been featured in major magazines and continues to grow as one of today’s top pop artists.
-  </p>
+<div class="achievements-container">
+  <h2 class="achievements-title">✨Achievements of Sabrina Carpenter✨</h2>
+  <div class="achievements-box">
+    <p>
+      Sabrina Carpenter has released several successful albums and hit songs like “Nonsense” and “Feather.” She has performed on big stages around the world and opened for Taylor Swift on the Eras Tour. Her music has reached millions of listeners, and she’s known for her strong vocals, creative lyrics, and stylish performances. Sabrina has also been featured in major magazines and continues to grow as one of today’s top pop artists.
+    </p>
+    <p><strong>Sabrina has won:</strong></p>
+    <ul>
+      <li>Record of the Year: For "Espresso"</li>
+      <li>Album of the Year: For "Short n’ Sweet"</li>
+      <li>Song of the Year: For "Please Please Please"</li>
+      <li>Best New Artist</li>
+      <li>2025 Winner Grammy: Best Pop Solo Performance</li>
+    </ul>
+  </div>
 </div>
+
+<style>
+  body {
+    background-color: #d3ebc6; /* Light green background to match the theme */
+    margin: 0;
+    padding: 0;
+  }
+
+  .achievements-container {
+    text-align: center;
+    padding: 50px 0; /* Adds space around the section */
+  }
+
+  .achievements-title {
+    background-color: #93C47D; /* Green Background */
+    color: white;
+    padding: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    display: inline-block;
+  }
+
+  .achievements-box {
+    background-color: #93C47D; /* White box for contrast */
+    border: 3px solid #93C47D; /* Green border */
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 30px auto; /* Adds space between header and paragraph */
+    text-align: left;
+    font-size: 18px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  ul li {
+    margin: 5px 0;
+  }
+</style>

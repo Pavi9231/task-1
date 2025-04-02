@@ -135,9 +135,4 @@
       border-radius: 8px;
     }
 
-    /* Responsive Design */
-    @media (max-width: 600px) {
-      .subheading-box {
-        width: 90%; /* Increased responsiveness, width adjusts for smaller screens */
-      }
-    }
+  
